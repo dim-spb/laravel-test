@@ -1,0 +1,64 @@
+html, body {min-width: 280px;}
+
+h1 {margin: 40px 20px; font-size: 30px;}
+p {margin: 40px 20px;}
+
+.filter {margin: 40px 20px; line-height: 30px;}
+.filter input[type="text"] {width: 200px;}
+
+.books {margin: 40px 20px; }
+.books .book {margin-bottom: 20px; padding: 0; min-width: 240px; max-width: 700px; border: 1px solid #ccc; border-radius: 4px; background: #eee;}
+.books .book .book_cover {display: inline-block; vertical-align: top; width: 150px; padding: 25px;}
+.books .book .book_descr {display: inline-block; vertical-align: top; min-width: 220px; padding: 25px;}
+.books .book .book_descr span {display: block; padding: 5px 15px 5px 0;}
+.books .book .book_descr span a {margin: 20px 20px 0 0;}
+
+.books_pagination {}
+.books_pagination ul {list-style-type: none; padding: 20px 0; }
+.books_pagination ul li {display: inline; padding: 10px; font-size: 20px;}
+.books_pagination ul li a, .books_pagination ul li span {padding: 10px; border: 1px solid #ccc; border-radius: 5px;}
+.books_pagination ul li.active span {background: #fdf7e7;}
+
+.book_edit_form {margin: 40px 20px; max-width: 500px; text-align: center;}
+.book_edit_form label {display: block; text-align: right; margin-bottom: 10px;}
+.book_edit_form p.error {padding-left: 150px; color: red;}
+.book_edit_form input.error {border: 1px solid red;}
+.book_edit_form input[type="text"] {width: 200px;}
+
+.nothing_found {color: red; font-weight: bold}
+
+@media screen and (max-width: 800px) {
+	.filter label {display: block;}
+	.filter span.label {display: block;}
+	.filter input[type="text"] {width: 100%; max-width: 300px;}
+
+	.books .book {text-align: center;}
+
+	.book_edit_form label {display: block; text-align: left;}
+	.book_edit_form span.label {display: block;}
+	.book_edit_form input[type="text"] {width: 100%; max-width: 300px;}
+}
+
+
+.info-message, .error-message {
+	position: fixed;
+	right: 40px;
+	bottom: 45px;
+	padding: 35px;
+	width: 100%;
+	max-width: 300px;
+	text-align: center;
+	z-index: 90000;
+	border-radius: 4px;
+	font-family: verdana;
+}
+.info-message {
+	background: #217346;
+	opacity: 0.8;
+	color: #ffffff;
+}
+.error-message {
+	background: #ff0000;
+	opacity: 0.8;
+	color: #ffffff;
+}
