@@ -17,6 +17,7 @@
         "webpack-cli": "^4.7.2"
     },
     "dependencies": {
-        "html-minifier-terser": "^7.2.0"
+        "html-minifier-terser": "^7.2.0",
+        "jquery": "^3.7.1"
     }
 }

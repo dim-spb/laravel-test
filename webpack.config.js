@@ -5,7 +5,7 @@ module.exports = [
         mode: 'production',
         entry: './resources/js/jquery-3.7.1.min.js',
         output: {
-            filename: 'main.min.js',
+            filename: 'jquery.min.js',
             path: path.resolve(__dirname, 'public/js'),
         },
     },
